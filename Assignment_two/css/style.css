@@ -1,0 +1,856 @@
+/* CSS Document */
+/* Assignment Two: Let's Order a Pizza */
+/* CSS Code by Deep Biswas, Georgian College, ON, Canada. */
+
+
+/*General Styling */
+.index-body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.op-body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/bg-op.png);
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navigation Styling */
+.navigation-container{
+    width: 100%;
+    height: 60px;
+    background-color: #f40027;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0,20);
+    top: 0px;
+}
+.navigation-content{
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12%;
+}
+.cart img{
+    height:30px;
+}
+.menu ul{
+    display: flex;
+}
+/* Navigation Text Styling */
+.menu ul li a{
+    padding:0px 30px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+    border-left: 3px solid #e54c51;
+}
+.cart{
+    display:flex;
+    align-items: center;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+}
+.cart a{
+    color: #ffffff;
+    margin: 0px 10px;
+}
+/* Navigation End */
+/* Logo Styling */
+.logo img{
+    height: auto;
+    width: 40%;
+}
+/* What's New & Order Online Styling */
+.whats-new{
+    text-align: center;
+    color: #f40027;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+}
+.order-online{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 45px;
+}
+/* Content */
+/* Rows Styling */
+.first-row{
+    display: flex;
+}
+.new{
+    width: 480px;
+    height: auto;
+    margin: 10px;
+    background-image: url(../img/new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.new p{
+    color: #ffffff;
+    line-height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.new p:nth-child(1){
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;  
+}
+.new p:nth-child(2){
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.new button{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #f40027;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+    outline: none;
+}
+.search, .order{
+    width:540px;
+    height:150px;
+    margin: 10px;
+    background-color: #b1b1b1;
+}
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order{
+    background-image: url(../img/order.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search{
+    background-image: url(../img/find.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+.search p{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 0px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.text{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+}
+.text input[type=search]{
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    outline: none;
+
+}
+.text button{
+    height: 35px;
+    width: 70px;
+    border: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    border-left: 1px solid #cdcaca;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order a{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #f40017;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0,1);
+}
+.second-row{
+    display: flex;
+}
+/* Foods Styling */
+.food-1, .food-2, .food-3{
+    width: 354px;
+    height: 359px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 5%;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+}
+.food-1 p,.food-2 p,.food-3 p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    line-height: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.fourth-row{
+    display: flex;
+}
+.food-4, .food-5, .food-6{
+    width: 354px;
+    height: 359px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 5%;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+}
+.food-4 p, .food-5 p, .food-6 p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', sans-serif;
+    line-height: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.fifth-row{
+    display: flex;
+}
+.food-7, .food-8, .food-9{
+    width: 354px;
+    height: 359px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 5%;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+}
+.food-7 p, .food-8 p, .food-9 p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', sans-serif;
+    line-height: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.name p:nth-child(1){
+    font-weight: 700;
+    font-size: 40px;
+}
+.name p:nth-child(2){
+    font-weight: 400;
+    font-size: 35px;
+}
+/* Adding Images for Each Food */
+.food-1{
+    background-image: url(../img/food-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-2{
+    background-image: url(../img/food-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-3{
+    background-image: url(../img/food-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-4{
+    background-image: url(../img/food-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-5{
+    background-image: url(../img/food-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-6{
+    background-image: url(../img/food-6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-7{
+    background-image: url(../img/food-7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-8{
+    background-image: url(../img/food-8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-9{
+    background-image: url(../img/food-9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Buttons Styling and Animation */
+.price button{
+    color: #ffffff;
+    border: none;
+    background-color: #f40027;
+    outline: none;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0,2);
+}
+button:active{
+    transform: scale(1.25);
+    transition: all ease 0.5s;
+}
+.legacy, .sides{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    width: 540px;
+    height: 180px;
+    margin: 12px;
+}
+.third-row{
+    display: flex;
+}
+.legacy{
+    background-image: url(../img/pizzapasta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sides{
+    background-image: url(../img/sides.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.legacy p a:nth-child(1), .sides p a:nth-child(1){
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+}
+.legacy p:nth-child(2), .sides p:nth-child(2){
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    text-align: center;
+}
+.legacy p, .sides p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+}
+/* Footer Styling */
+.footer{
+    background-color: #0a0a0a;
+    height: 150px;
+}
+.social ul{
+    display: flex;
+}
+.social img{
+    height: 15px;
+}
+.social ul li a{
+    padding: 15px;
+}
+.footer-menu ul li a{
+    border-left: 3px solid #2e2e2e;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Teko', sans-serif;
+}
+.footer-navigation{
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12%;
+}
+.copyright{
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.copyright p{
+    color: #b9b9b9;
+    text-align: center;
+}
+.new, .search, .order, .food-1, .food-2, .food-3, .food-4, .food-5, .food-6, .food-7, .food-8, .food-9, .legacy, .sides{
+    border-radius: 10px;
+}
+/* Index Page End */
+/* CSS Code by Deep Biswas, Georgian College, ON, Canada. */
+
+
+/* Order Page Start */
+/* Styling Pizzas */
+.pizzas-container{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.pizzas{
+    align-self: center;
+    border-radius: 10px;
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding: 50px;
+}
+.pizza-1, .pizza-2, .pizza-3, .pizza-4, .pizza-5, .pizza-6, .pizza-7, .pizza-8, .pizza-9{
+    display: flex;
+    align-items: center;
+    left: 50%;
+    margin-top: 5%;
+}
+.pizza-1 img, .pizza-2 img, .pizza-3 img, .pizza-4 img, .pizza-5 img, .pizza-6 img, .pizza-7 img, .pizza-8 img, .pizza-9 img{
+    height: auto;
+    width: 30%;
+    border-radius: 5px;
+}
+.pizza-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.pizza-details p{
+    font-family: 'DM Sans';
+    color: #ffffff;
+}
+.pizza-options{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pizza-size{
+    padding: 8px;
+    border: 1px solid #f40027;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.pizza-quantity{
+    width: 40px;
+    padding: 4.2px;
+    border: 1px solid #f40027;
+    border-radius: 4px;
+    font-size: 22px;
+    text-align: center;
+}
+.pizza-price{
+    margin-left: auto;
+    font-weight: bold;
+}
+.subtotal{
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+/* Pizzas Styling Done */
+/* Sides and Drinks Choice Styling */
+.menu-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.sidesdrinksop-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 55.75%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidesop, .drinksop{
+    border-radius: 10px;
+    margin: 0.5%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sidesop{
+    background-image: url(../img/sidesop.png);
+}
+.sidesop p:nth-child(1){
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
+.sidesop p:nth-child(2){
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    color: #ffffff;
+    margin-bottom: 15%;
+    cursor: pointer;
+}
+.drinksop{
+    background-image: url(../img/drinksop.png);
+}
+.drinksop p:nth-child(1){
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
+.drinksop p:nth-child(2){
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    color: #ffffff;
+    margin-bottom: 15%;
+    cursor: pointer;
+}
+/* Sides and Drinks Done */
+/* Main form styling */
+.forms{
+    display: block;
+    align-self: center;
+    border-radius: 10px;
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.10);
+    padding: 50px;
+    margin-top: .5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+label{
+    font-weight: 400;
+    margin-top: 10px;
+    display: block;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+}
+  
+input[type="text"], input[type="email"], input[type="tel"], textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #f40027;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 5px;
+}
+.subtotal-final{
+    margin-top: 20px;
+    color: #ffffff;
+}  
+button[type="submit"]{
+    margin-top: 7%;
+    background-color: #f40027;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+label[for^="checkbox"]{
+    display: inline-block;
+    margin-top: 5px;
+}
+label[for^="radio"]{
+    display: inline-block;
+    margin-right: 15px;
+}
+label[for="special-instructions"], textarea {
+    margin-top: 10px;
+}  
+#address-province{
+    appearance: none;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f40027;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="text"]:not(:placeholder-shown), input[type="email"]:not(:placeholder-shown), input[type="tel"]:not(:placeholder-shown), textarea:not(:placeholder-shown){
+    color: #ffffff;
+}
+#address-province:not([value=""]){
+    color: #ffffff;
+}
+
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label{
+    color: #ffffff;
+}
+/* Form Main Elements Done */
+/* Payment Logos Styling */
+.pay-logos{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.35%;
+}
+.visa, .applepay, .mastercard, .googlepay, .paypal{
+    height: Auto;
+    width: 5%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/* Main CSS Styling Done */
+/* CSS Code by Deep Biswas, Georgian College, ON, Canada. */
+
+
+/* Responsive Designs */
+/* Adjustments for Smaller Screens */
+@media screen and (max-width: 1200px){
+    .navigation-content{
+        margin: 0px 8%;
+    }
+    .new, .search, .order, .food-1, .food-2, .food-3, .food-4, .food-5, .food-6, .food-7, .food-8, .food-9, .legacy, .sides {
+        width: 100%;
+        padding: 20px;
+        margin: 5px;
+    }
+}
+/* For Smaller than Desktop Displays */
+@media screen and (max-width: 992px){
+    .navigation-content{
+        margin: 0px 5%;
+    }
+    .menu ul li a{
+        padding: 0px 15px;
+        font-size: 18px;
+    }
+    .cart img{
+        height: 25px;
+    }
+}
+/* For Tablet Size Displays */
+@media screen and (max-width: 768px){
+    .navigation-content{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li a{
+        padding: 10px 0px;
+        border-left: none;
+        border-bottom: 2px solid #e54c51;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .whats-new, .order-online{
+        font-size: 30px;
+    }
+    .new p:nth-child(1){
+        font-size: 30px;
+    }
+    .new p:nth-child(2){
+        font-size: 25px;
+        -webkit-text-stroke-width: 0.5px;
+    }
+}
+/* For Phone Displays */
+@media screen and (max-width: 576px){
+    .navigation-container{
+        height: auto;
+    }
+    .cart{
+        display: none;
+    }
+    .whats-new, .order-online{
+        font-size: 24px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .first-row, .second-row, .third-row, .fourth-row, .fifth-row{
+        flex-direction: column;
+    }
+    .food-1, .food-2, .food-3, .food-4, .food-5, .food-6, .food-7, .food-8, .food-9, .legacy, .sides{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+    .name p:nth-child(1), .name p:nth-child(2){
+        font-size: 30px;
+    }
+    .food-1 p, .food-2 p, .food-3 p, .food-4 p, .food-5 p, .food-6 p, .food-7 p, .food-8 p, .food-9 p, .legacy p, .sides p {
+        font-size: 16px;
+        line-height: 30px;
+        -webkit-text-stroke-width: 0.5px;
+    }
+    .price button {
+        font-size: 14px;
+    }
+    .legacy p a:nth-child(1), .sides p a:nth-child(1){
+        font-size: 30px;
+    }
+    .legacy p:nth-child(2), .sides p:nth-child(2){
+        font-size: 16px;
+    }
+    .footer-navigation{
+        margin: 0px 5%;
+    }
+    .footer-menu ul li a{
+        font-size: 14px;
+    }
+    .footer{
+        height: auto;
+    }
+    .social ul li a{
+        padding: 8px;
+    }
+    .copyright{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .forms, .pizzas{
+        width: 90%;
+        padding: 20px;
+        margin: 5px auto;
+        font-size: 14px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select{
+        padding: 8px;
+        font-size: 14px;
+    }
+    .pizza-options{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pizza-size, .pizza-quantity{
+        width: auto;
+    }
+    .subtotal, .subtotal-final{
+        font-size: 14px;
+    }
+    button[type="submit"]{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .pay-logos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .visa, .applepay, .mastercard, .googlepay, .paypal{
+        width: 15%;
+        margin: 2%;
+    }
+}
+/* Adjustments for Tablet Size (768px - 992px) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .navigation-content{
+        margin: 0px 3%;
+    }
+    .menu ul li a{
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    .cart img{
+        height: 22px;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .whats-new, .order-online{
+        font-size: 28px;
+    }
+    .new p:nth-child(1){
+        font-size: 28px;
+    }
+    .new p:nth-child(2){
+        font-size: 22px;
+        -webkit-text-stroke-width: 0.4px;
+    }
+}
+/* Hide Elements in Smaller Screens */
+@media screen and (max-width: 768px){
+    .cart{
+        display: none;
+    }
+    .navigation-content .menu ul {
+      display: none;
+    }
+    .footer-navigation .menu ul {
+      display: none;
+    }
+}
+/* CSS Adjustments End */
+
+/* CSS END */
+/* CSS Code by Deep Biswas, Georgian College, ON, Canada. */

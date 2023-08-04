@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- Assignment Two: Let's Order a Pizza -->
+<!-- HTML Code by Deep Biswas, Georgian College, ON, Canada. -->
+<html lang="en">
+    <head>
+      <!-- Meta Information -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Assignment Two: Let's Order a Pizza - Order">
+      <title>Pizza Hub | Order</title>
+      <meta name="robots" content="noindex, nofollow">
+      <!-- Adding Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Font styles from Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;300;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+      <!-- Adding Custom CSS File -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Adding JS File -->
+      <script src="./js/script.js"></script>
+    </head>
+    <body class="op-body">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <div class="navigation-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Pizza Hub Logo"></a>
+                </div>
+                <!-- Menu -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="./index.html">BEST DEALS</a></li>
+                    </ul>
+                </div>
+                <!-- Cart -->
+                <div class="cart">
+                    <img src="img/cart.png" alt="Cart">
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation End -->
+        <div class="pizzas-container">
+            <div class="pizzas">
+                <!-- Adding Pizzas -->
+                <!-- Adding Sizes Options and Prices -->
+                <!-- Pizza-1 -->
+                <div class="pizza-1">
+                    <img src="./img/pizzamargherita.png" alt="Margherita Pizza">
+                    <div class="pizza-details">
+                        <p>Margherita Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="9.99">Small - $9.99</option>
+                                <option value="medium" data-price="11.99">Medium - $11.99</option>
+                                <option value="large" data-price="14.99">Large - $14.99</option>
+                                <option value="extra-large" data-price="17.99">Extra Large - $17.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-2 -->
+                <div class="pizza-2">
+                    <img src="./img/pizzachicken.png" alt="Chicken Pizza">
+                    <div class="pizza-details">
+                        <p>Chicken Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="11.99">Small - $11.99</option>
+                                <option value="medium" data-price="13.99">Medium - $13.99</option>
+                                <option value="large" data-price="16.99">Large - $16.99</option>
+                                <option value="extra-large" data-price="19.99">Extra Large - $19.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-3 -->
+                <div class="pizza-3">
+                    <img src="./img/pizzapepperoni.png" alt="Pepporoni Pizza">
+                    <div class="pizza-details">
+                        <p>Pepperoni Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="11.99">Small - $11.99</option>
+                                <option value="medium" data-price="13.99">Medium - $13.99</option>
+                                <option value="large" data-price="16.99">Large - $16.99</option>
+                                <option value="extra-large" data-price="18.99">Extra Large - $18.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-4 -->
+                <div class="pizza-4">
+                    <img src="./img/pizzaitalianolive.png" alt="Italian Olive Pizza">
+                    <div class="pizza-details">
+                        <p>Italian Olive Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="9.99">Small - $9.99</option>
+                                <option value="medium" data-price="11.99">Medium - $11.99</option>
+                                <option value="large" data-price="14.99">Large - $14.99</option>
+                                <option value="extra-large" data-price="17.99">Extra Large - $17.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-5 -->
+                <div class="pizza-5">
+                    <img src="./img/pizzavegetable.png" alt="Vegetable Pizza">
+                    <div class="pizza-details">
+                        <p>Vegetable Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="8.99">Small - $8.99</option>
+                                <option value="medium" data-price="10.99">Medium - $10.99</option>
+                                <option value="large" data-price="12.99">Large - $12.99</option>
+                                <option value="extra-large" data-price="16.99">Extra Large - $16.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-6 -->
+                <div class="pizza-6">
+                    <img src="./img/pizzanyc.png" alt="NYC Style Pizza">
+                    <div class="pizza-details">
+                        <p>NYC Style Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="7.99">Small - $7.99</option>
+                                <option value="medium" data-price="9.99.00">Medium - $9.99</option>
+                                <option value="large" data-price="12.99">Large - $12.99</option>
+                                <option value="extra-large" data-price="16.99">Extra Large - $16.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-7 -->
+                <div class="pizza-7">
+                    <img src="./img/pizzamushroom.png" alt="Mushroom Pizza">
+                    <div class="pizza-details">
+                        <p>Mushroom Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="8.99">Small - $8.99</option>
+                                <option value="medium" data-price="10.99.00">Medium - $10.99</option>
+                                <option value="large" data-price="13.99">Large - $13.99</option>
+                                <option value="extra-large" data-price="16.99">Extra Large - $16.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-8 -->
+                <div class="pizza-8">
+                    <img src="./img/pizzafourseasons.png" alt="Four Seasons Pizza">
+                    <div class="pizza-details">
+                        <p>Four Seasons Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="7.99">Small - $7.99</option>
+                                <option value="medium" data-price="10.99.00">Medium - $10.99</option>
+                                <option value="large" data-price="13.99">Large - $13.99</option>
+                                <option value="extra-large" data-price="17.99">Extra Large - $17.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Pizza-9 -->
+                <div class="pizza-9">
+                    <img src="./img/pizzaalfredo.png" alt="Alfredo Pizza">
+                    <div class="pizza-details">
+                        <p>Alfredo Pizza</p>
+                        <div class="pizza-options">
+                            <select class="pizza-size">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="small" data-price="8.99">Small - $8.99</option>
+                                <option value="medium" data-price="10.99">Medium - $10.99</option>
+                                <option value="large" data-price="13.99">Large - $13.99</option>
+                                <option value="extra-large" data-price="16.99">Extra Large - $16.99</option>
+                            </select>
+                            <input type="number" class="pizza-quantity" value="1">
+                        </div>
+                        <p class="pizza-price">$0.00</p>
+                    </div>
+                </div>
+                <!-- Displaying Subtotal Using Calculations from JS -->
+                <div class="subtotal">
+                    Subtotal: CA<span class="subtotal-amount">$0.00</span>
+                </div>
+            </div>
+            <!-- Adding Choice for Drinks and Sides -->
+            <div class="menu-wrapper">
+                <div class="sidesdrinksop-container">
+                    <div class="sidesop">
+                        <p>Explore our</p>
+                        <p>SIDES MENU</p>
+                    </div>
+                    <div class="drinksop">
+                        <p>Explore our</p>
+                        <p>DRINKS MENU</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Creating the Form -->
+            <div class="forms">
+                <form>
+                    <!-- First Name Field -->
+                    <label for="fname">First Name*:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <!-- Last Name Field -->
+                    <label for="lname">Last Name*:</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <!-- Email Field -->
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Number Field -->
+                    <label for="number">Number*:</label>
+                    <input type="tel" id="number" name="number" pattern="+[1]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <!-- Street Address Field -->
+                    <label for="address-street">Street Address*:</label>
+                    <input type="text" id="address-street" name="address-street" required>
+                    <!-- City Field -->
+                    <label for="address-city">City*:</label>
+                    <input type="text" id="address-city" name="address-city" required>
+                    <!-- Province Selection -->
+                    <label for="address-province">Province*:</label>
+                    <select id="address-province" name="address-province" required>
+                    <!-- Province Options -->
+                      <option value="" disabled selected>Please Select a Province</option>
+                      <option value="AB">Alberta</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="MB">Manitoba</option>
+                      <option value="NB">New Brunswick</option>
+                      <option value="NL">Newfoundland and Labrador</option>
+                      <option value="NS">Nova Scotia</option>
+                      <option value="ON">Ontario</option>
+                      <option value="PE">Prince Edward Island</option>
+                      <option value="QC">Québec</option>
+                      <option value="SK">Saskatchewan</option>
+                    </select>
+                    <!-- Address Type Radio -->
+                    <label>Address Type*:</label>
+                    <label for="radio1">
+                      <input type="radio" id="radio1" name="radio" value="option1" required> Home
+                    </label>
+                    <label for="radio2">
+                      <input type="radio" id="radio2" name="radio" value="option2" required> Office
+                    </label>
+                    <!-- Extra Checkbox -->
+                    <label>Extras:</label>
+                    <label for="checkbox1">
+                      <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1"> Chilli Flakes
+                    </label>
+                    <label for="checkbox2">
+                      <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2"> Oregano
+                    </label>
+                    <!-- Special Instructions -->
+                    <label for="special-instructions">Special Instructions for Delivery:</label>
+                    <textarea id="special-instructions" name="special-instructions" rows="4"></textarea>
+                    <!-- Displaying Subtotal Again Using Calculations from JS -->
+                    <div class="subtotal-final">
+                        Subtotal: CA<span class="subtotal-amount">$0.00</span>
+                    </div>
+                    <button type="submit">Pay & Order</button>
+                  </form>
+            </div>
+            <!-- Adding Supported Payment Logos -->
+            <div class="pay-logos">
+                <div class="visa">
+                    <img src="./img/visa.png" alt="VISA">
+                </div>
+                <div class="applepay">
+                    <img src="./img/applepay.png" alt="APPLE PAY">
+                </div>
+                <div class="mastercard">
+                    <img src="./img/mastercard.png" alt="MASTERCARD">
+                </div>
+                <div class="googlepay">
+                    <img src="./img/googlepay.png" alt="GOOGLE PAY">
+                </div>
+                <div class="paypal">
+                    <img src="./img/paypal.png" alt="PAYPAL">
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-navigation">
+                <!-- Footer Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo-bw.png" alt="Pizza Hub Logo"></a>
+                </div>
+                <!-- Footer Menu -->
+                <div class="menu footer-menu">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">PRIVACY PROTECTION</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media Links -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="./img/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="./img/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="./img/youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fake Copyright & Information -->
+            <div class="copyright">
+                <p>*Pricing may vary by location. An additional charge may apply for premium toppings, sauces, extra cheese, and special pizza types including: Handmade Pan Pizzas, Thin Crust Pizzas, Gluten Free Pizzas and Feast Pizzas.</p>
+                <p>Please refer to offer when ordering. Limited time. Prices, participation, delivery area, terms and charges may vary.</p>
+                <p>COPYRIGHT (2023) - DEEP BISWAS. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </body>
+</html>
